@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="metamodel" nsURI="http://www.umontreal.geodes/metamodel" nsPrefix="metamodel">
+  <eClassifiers xsi:type="ecore:EClass" name="Model">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="operation" upperBound="-1"
+        eType="#//Operation" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clazz" upperBound="-1"
+        eType="#//Clazz" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attribute" upperBound="-1"
+        eType="#//Attribute" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributecondidate" upperBound="-1"
+        eType="#//AttributeCondidate" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="clazzcondidate" upperBound="-1"
+        eType="#//ClazzCondidate" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="association" upperBound="-1"
+        eType="#//Association" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="NamedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TypedElement" abstract="true">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Operation" eSuperTypes="#//NamedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Clazz" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="generalizes" upperBound="-1"
+        eType="#//Clazz" eOpposite="#//Clazz/specializes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="specializes" eType="#//Clazz"
+        eOpposite="#//Clazz/generalizes"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="associatedFrom" upperBound="-1"
+        eType="#//Clazz" eOpposite="#//Clazz/associatedTo"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="associatedTo" upperBound="-1"
+        eType="#//Clazz" eOpposite="#//Clazz/associatedFrom"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="has" upperBound="-1" eType="#//Clazz"
+        eOpposite="#//Clazz/isMember"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="isMember" eType="#//Clazz"
+        eOpposite="#//Clazz/has"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributes" upperBound="-1"
+        eType="#//Attribute" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Attribute" eSuperTypes="#//NamedElement #//TypedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="ClazzCondidate" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="attributecondidate" upperBound="-1"
+        eType="#//AttributeCondidate" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AttributeCondidate" eSuperTypes="#//TypedElement"/>
+  <eClassifiers xsi:type="ecore:EClass" name="Association" eSuperTypes="#//NamedElement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isComposition" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isAssociation" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="isInheritance" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" lowerBound="1"
+        eType="#//Clazz"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" lowerBound="1"
+        eType="#//Clazz"/>
+  </eClassifiers>
+</ecore:EPackage>

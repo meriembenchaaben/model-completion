@@ -1,0 +1,16 @@
+,sequence,Model
+0,"[['Customer', 'ContactMethod'], ['Bank', 'Customer'], ['Bank', 'Party'], ['Bank', 'account']]",bank
+1,"[['Saving', 'Customer'], ['Loan', 'Customer'], ['Customer', 'Financial_Representative']]",BankingSystem
+2,"[['Customer', 'Person'], ['Customer', 'PaymentDetails'], ['Customer', 'Person']]",bookingmodel
+3,"[['ActualAmountEntry', 'Category'], ['ActualTransactionEntry', 'Category'], ['BudgetFactorEntry', 'Category']]",budgeting
+4,"[['Company', 'Visitable'], ['Employee', 'Visitable'], ['Company', 'Department']]",company
+5,"[['Family', 'Person'], ['mother', 'father'], ['daughter', 'Family']]",ExtendedFamilies
+6,"[['Member', 'Family'], ['Member', 'Family'], ['Family', 'Member']]",Families
+7,"[['Family', 'NamedElement'],['father','mother']]",family
+8,"[['Nurse', 'Staff'], ['Department', 'Room'], ['Nurse', 'patient'],['Nurse','department']]",HospitalExample
+9,"[['Addon', 'Costable'], ['visitor', 'Costable'], ['Room', 'Costable']]",HotelManagementClassDiagram
+10,"[['CirculatingItem', 'Borrower'], ['AudioVisualItem', 'Borrower'], ['Library', 'Borrower']]",library
+11,"[['Male', 'Person'], ['Female', 'Person'],['Female','Male']]",Persons
+12,"[['Airport', 'City'], ['SpecificFlight', 'GeneralFlight'], ['Airport', 'City'],['passenger', 'plane'],['trip','passenger']]",reservationsystem
+13,"[['Family', 'FamilyMember'], ['FamilyRegister', 'Family'], ['Family', 'FamilyMember']]",SimpleFamilies
+14,"[['university', 'department'], ['professor', 'department'], ['student', 'course'],['professor', 'course']]",SimpleFamilies

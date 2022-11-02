@@ -1,0 +1,19 @@
+,Unnamed: 0,name,attributes,ok
+14,14,Medication,"['id', 'label', 'hours', 'minutes', 'dose', 'units']",ok
+16,16,Response,"['id', 'questionId', 'responseKey', 'value', 'timeStamp']",ok
+24,24,AnalogClockTimePicker,"['mCalendar', 'mHourHand', 'mMinuteHand', 'mClockHinge', 'mDial', 'mMinutes', 'mHour', 'mLastX', 'mLastY', 'mTimeFormatter', 'mTimeTextSize', 'mDayTimeTextDelta', 'mHourAngle']",ok
+27,27,ClockState,"['mToggledDayTime', 'mChanged', 'mFirstTouch', 'mIsDayTime']",ok
+42,42,Medication,"['id', 'label', 'hours', 'minutes', 'dose', 'units']",ok
+44,44,Response,"['id', 'questionId', 'responseKey', 'value', 'timeStamp']",ok
+53,53,Ball,"['RADIUS', 'rnd', 'ballX', 'ballY', 'ballSpeedX', 'ballSpeedY', 'ballStartSpeedP1', 'ballStartSpeedP2', 'ballStartX', 'ballStartY']",ok
+56,56,PongPanel,"['WIDTH', 'HEIGHT', 'scoreP1', 'divider', 'scoreP2', 'scorePanel', 'timer', 'DELAY']",ok
+6,13,patient,"['id', 'name', 'surname', 'history','gender','contact','homeAddress']"
+67,67,Bicycle,"['costPass', 'costVehicle', 'pMax', 'vSize']",ok
+68,68,Bus,"['costPass', 'costVehicle', 'pMax', 'vSize']",ok
+69,69,Car,"['costPassenger', 'costVehicle', 'pMax', 'vSize']",ok
+73,73,Truck,"['costPass', 'costVehicle', 'pMax', 'vSize']",ok
+80,80,CatchCreature,"['rnd', 'delay', 'timer', 'score']",ok
+81,81,Creature,"['img', 'rnd', 'imgX', 'imgY']",ok
+85,85,Ball,"['RADIUS', 'rnd', 'ballX', 'ballY', 'ballSpeedX', 'ballSpeedY']",ok
+86,86,BallPanel,"['WIDTH', 'HEIGHT', 'DELAY', 'bollKnapp', 'ballSpeedX', 'ballSpeedY', 'ballX', 'ballY', 'rnd', 'timer', 'balls']",ok
+12,13,nurse,"['id', 'name', 'department', 'yearsOfExperience','speciality','contact']"

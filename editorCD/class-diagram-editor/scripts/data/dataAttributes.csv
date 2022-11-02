@@ -1,0 +1,45 @@
+,Unnamed: 0,name,attributes
+7,7,CuringDepressionActivity,"['questions', 'canExit']"
+9,9,SplashActivity,"['SPLASH_DISPLAY_LENGTH', 'isSplashEnabled']"
+10,10,Config,"['questionRepository', 'medicationRepository', 'responseRepository']"
+11,11,XmlExample,['questions']
+13,13,JournalEntry,"['id', 'timeStamp']"
+14,14,Medication,"['id', 'label', 'hours', 'minutes', 'dose', 'units']"
+16,16,Response,"['id', 'questionId', 'responseKey', 'value', 'timeStamp']"
+18,18,MedicationRepositoryImpl,['medications']
+24,24,AnalogClockTimePicker,"['mCalendar', 'mHourHand', 'mMinuteHand', 'mClockHinge', 'mDial', 'mMinutes', 'mHour', 'mLastX', 'mLastY', 'mTimeFormatter', 'mTimeTextSize', 'mDayTimeTextDelta', 'mHourAngle']"
+25,25,GraphView,"['lastX', 'lastY', 'mXLabel', 'mYLabel', 'mDescription', 'mActivity']"
+27,27,ClockState,"['mToggledDayTime', 'mChanged', 'mFirstTouch', 'mIsDayTime']"
+36,36,CuringDepressionActivity,"['questions', 'canExit']"
+37,37,SplashActivity,"['SPLASH_DISPLAY_LENGTH', 'isSplashEnabled']"
+38,38,Config,"['questionRepository', 'medicationRepository', 'responseRepository']"
+39,39,XmlExample,['questions']
+41,41,JournalEntry,"['id', 'timeStamp']"
+42,42,Medication,"['id', 'label', 'hours', 'minutes', 'dose', 'units']"
+44,44,Response,"['id', 'questionId', 'responseKey', 'value', 'timeStamp']"
+46,46,MedicationRepositoryImpl,['medications']
+53,53,Ball,"['RADIUS', 'rnd', 'ballX', 'ballY', 'ballSpeedX', 'ballSpeedY', 'ballStartSpeedP1', 'ballStartSpeedP2', 'ballStartX', 'ballStartY']"
+54,54,Player,"['x', 'y', 'width', 'height']"
+56,56,PongPanel,"['WIDTH', 'HEIGHT', 'scoreP1', 'divider', 'scoreP2', 'scorePanel', 'timer', 'DELAY']"
+60,60,AbstractIntCollection,"['size', 'values']"
+66,66,IntIterator,['count']
+67,67,Bicycle,"['costPass', 'costVehicle', 'pMax', 'vSize']"
+68,68,Bus,"['costPass', 'costVehicle', 'pMax', 'vSize']"
+69,69,Car,"['costPassenger', 'costVehicle', 'pMax', 'vSize']"
+71,71,Passenger,"['nPass', 'nPrize']"
+72,72,Stenaline,"['pVehicle', 'pPass']"
+73,73,Truck,"['costPass', 'costVehicle', 'pMax', 'vSize']"
+74,74,Vehicle,"['prize', 'size', 'nPass']"
+76,76,NewsAgency,"['name', 'newsArchive']"
+78,78,NewsPaper,"['name', 'news', 'scan']"
+80,80,CatchCreature,"['rnd', 'delay', 'timer', 'score']"
+81,81,Creature,"['img', 'rnd', 'imgX', 'imgY']"
+85,85,Ball,"['RADIUS', 'rnd', 'ballX', 'ballY', 'ballSpeedX', 'ballSpeedY']"
+86,86,BallPanel,"['WIDTH', 'HEIGHT', 'DELAY', 'bollKnapp', 'ballSpeedX', 'ballSpeedY', 'ballX', 'ballY', 'rnd', 'timer', 'balls']"
+89,89,AbstractIntCollection,"['size', 'values']"
+97,97,IntIterator,['count']
+98,98,Sum,"['a', 'b', 'first', 'second', 'summa']"
+106,106,LinkedQueue,"['size', 'tmp']"
+112,112,HashWordSet,"['size', 'buckets']"
+114,114,TreeWordSet,"['size', 'str']"
+115,115,Word,['word']

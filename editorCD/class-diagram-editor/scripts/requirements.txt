@@ -1,0 +1,6 @@
+nltk==3.5
+wordninja==2.0.0
+pandas==1.2.4
+gensim==4.2.0
+openai==0.20.0
+python-dotenv==0.20.0

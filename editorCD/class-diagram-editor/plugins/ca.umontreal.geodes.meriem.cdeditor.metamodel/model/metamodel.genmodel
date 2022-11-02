@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/ca.umontreal.geodes.meriem.cdeditor.metamodel/src-gen"
+    creationIcons="false" editDirectory="/ca.umontreal.geodes.meriem.cdeditor.metamodel.edit/src-gen"
+    editorDirectory="/ca.umontreal.geodes.meriem.cdeditor.metamodel.editor/src-gen"
+    modelPluginID="ca.umontreal.geodes.meriem.cdeditor.metamodel" modelName="Metamodel"
+    rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container" codeFormatting="true"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>metamodel.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="Metamodel" basePackage="ca.umontreal.geodes.meriem.cdeditor"
+      disposableProviderFactory="true" ecorePackage="metamodel.ecore#/">
+    <genClasses ecoreClass="metamodel.ecore#//Model">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metamodel.ecore#//Model/operation"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metamodel.ecore#//Model/clazz"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metamodel.ecore#//Model/attribute"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metamodel.ecore#//Model/attributecondidate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metamodel.ecore#//Model/clazzcondidate"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metamodel.ecore#//Model/association"/>
+    </genClasses>
+    <genClasses ecoreClass="metamodel.ecore#//NamedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metamodel.ecore#//NamedElement/name"/>
+    </genClasses>
+    <genClasses ecoreClass="metamodel.ecore#//TypedElement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metamodel.ecore#//TypedElement/type"/>
+    </genClasses>
+    <genClasses ecoreClass="metamodel.ecore#//Operation"/>
+    <genClasses ecoreClass="metamodel.ecore#//Clazz">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metamodel.ecore#//Clazz/generalizes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metamodel.ecore#//Clazz/specializes"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metamodel.ecore#//Clazz/associatedFrom"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metamodel.ecore#//Clazz/associatedTo"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metamodel.ecore#//Clazz/has"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metamodel.ecore#//Clazz/isMember"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metamodel.ecore#//Clazz/attributes"/>
+    </genClasses>
+    <genClasses ecoreClass="metamodel.ecore#//Attribute"/>
+    <genClasses ecoreClass="metamodel.ecore#//ClazzCondidate">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference metamodel.ecore#//ClazzCondidate/attributecondidate"/>
+    </genClasses>
+    <genClasses ecoreClass="metamodel.ecore#//AttributeCondidate"/>
+    <genClasses ecoreClass="metamodel.ecore#//Association">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metamodel.ecore#//Association/isComposition"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metamodel.ecore#//Association/isAssociation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute metamodel.ecore#//Association/isInheritance"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metamodel.ecore#//Association/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference metamodel.ecore#//Association/target"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

@@ -1,0 +1,15 @@
+Address => String 
+age => int
+name => String
+isCanceled => boolean
+salary => int
+sold => float
+surname => String
+birthDate => Date
+isValidated => boolean
+staffNumber => int
+width=> double
+phoneNumber => float
+city => String
+state => String
+zipCode => int

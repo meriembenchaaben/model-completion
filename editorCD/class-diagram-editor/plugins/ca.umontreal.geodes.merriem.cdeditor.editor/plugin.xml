@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="ca.umontreal.geodes.merriem.cdeditor.editor.Activator"
+               id="ca.umontreal.geodes.merriem.cdeditor.editor"
+	       name="editor">
+    </component>
+  </extension>
+  <extension
+        point="org.eclipse.sirius.externalJavaAction">
+     <javaActions
+           actionClass="ca.umontreal.geodes.merriem.cdeditor.editor.ExternalJavaAction1"
+           id="ca.umontreal.geodes.merriem.cdeditor.editor.javaActions1">
+     </javaActions>
+  </extension>
+  <extension
+        point="org.eclipse.ui.menus">
+     <menuContribution
+           allPopups="false"
+           locationURI="toolbar:org.eclipse.sirius.diagram.ui.tabbar?after=additions">
+        <command
+              commandId="ca.umontreal.geodes.merriem.cdeditor.editor.command.1"
+              icon="icons/start.png"
+              label="predict"
+              mode="FORCE_TEXT"
+              style="push"
+              tooltip="start">
+        </command>
+     </menuContribution>
+  </extension>
+  <extension
+        point="org.eclipse.ui.handlers">
+     <handler
+           class="ca.umontreal.geodes.merriem.cdeditor.editor.handler"
+           commandId="ca.umontreal.geodes.merriem.cdeditor.editor.command.1">
+     </handler>
+  </extension>
+</plugin>
